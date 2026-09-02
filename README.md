@@ -197,39 +197,6 @@ The main difference between UFC and WWE is not simply which one generates more r
 
 At the TKO level, revenue also became more diversified during the period, particularly as IMG became a significant contributor from 2025 onwards.
 
----
-
-## Project structure
-
-```text
-tko-financial-performance/
-│
-├── data/
-│   ├── TKOPerformance.csv
-│   ├── UFCPerformance.csv
-│   └── WWEPerformance.csv
-│
-├── sql/
-│   ├── 01_tko_revenue_growth.sql
-│   ├── 02_segment_revenue_contribution.sql
-│   ├── 03_segment_revenue_growth.sql
-│   ├── 04_revenue_stream_mix.sql
-│   ├── 05_net_profitability.sql
-│   ├── 06_operating_expense_ratio.sql
-│   ├── 07_revenue_profitability_ranking.sql
-│   ├── 08_segment_qoq_growth.sql
-│   ├── 09_revenue_per_event.sql
-│   └── 10_event_audience_revenue_efficiency.sql
-│
-├── powerbi/
-│   └── TKO_Financial_Performance.pbix
-│
-└── README.md
-```
-event volume, while UFC generates substantially more revenue per individual event.
-
-
-
 
 
 
