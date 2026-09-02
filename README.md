@@ -10,7 +10,7 @@ The project uses three datasets:
 * UFCPerformance.csv
 * WWEPerformance.csv
 
-stored in the `Data` folder.
+stored in the [`Data`](./SQL/Data) folder.
 
 And there are some limitations in the data:
 
@@ -50,22 +50,15 @@ The analysis was built around the following questions:
 
 SQL was used to answer the business questions and calculate the main metrics.
 
-Some of the techniques used:
+Some of the results achieved are:
 
-* `LAG()`
-* `SUM()`
-* Window functions
-* `RANK()`
-* CTEs
-* Aggregations
 * Revenue growth calculations
 * Profit margins
 * Revenue contribution
 * Revenue per event
 * Revenue per attendee/ticket
 
-The queries are stored in the `sql` folder.
-
+The queries are stored in the [`SQL/`](./SQL/) folder.
 
 
 ## Power BI
