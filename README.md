@@ -6,35 +6,17 @@ This project studies TKO Group Holdings financial performance from Q1 2024 to Q1
 
 The main goal was to understand where TKO's revenue comes from, how its financial performance changed over time, and how UFC and WWE compare on event activity and revenue generation.
 
-
----
-
-## About the dataset
-
 The project uses three datasets:
 
 * `TKOPerformance.csv`
 * `UFCPerformance.csv`
 * `WWEPerformance.csv`
 
-The data is reported by quarter and covers **Q1 2024 – Q1 2026**.
+And there are some limitations in the data:
 
-The datasets contain information about:
+The information about IMG and the segments represented under "Other" like professional Bull Riders (PBR) and Zuffa Boxing, are only available from Q1 2025 onwards.
 
-* Total revenue
-* Revenue by segment
-* Media rights
-* Live events
-* Sponsorship
-* Consumer products
-* Operating expenses
-* Operating income
-* Net income
-* Ticketed events
-* Attendance
-* Estimated tickets distributed
-
-There are some limitations in the data. IMG and Other revenue are only available from Q1 2025 onwards. WWE ticket distribution is estimated, while UFC uses announced attendance, so the audience-related comparisons between the two should be treated as directional.
+WWE ticket distribution is estimated, while UFC uses announced attendance, so the audience-related comparisons between the two should be treated as directional.
 
 ---
 
@@ -43,15 +25,24 @@ There are some limitations in the data. IMG and Other revenue are only available
 The analysis was built around the following questions:
 
 1. How has TKO's revenue changed over time?
+   
 2. Which segments contribute the most revenue?
+   
 3. Which segments have grown the most?
+   
 4. Which revenue streams contribute the most to TKO's revenue?
+   
 5. How has profitability changed over time?
+    
 6. How significant are operating expenses compared with revenue?
+    
 7. Which quarters combine high revenue with strong profitability?
+    
 8. How are UFC and WWE performing quarter over quarter?
+    
 9. How much revenue does UFC and WWE generate per event?
-10. How efficiently do UFC and WWE turn event activity and audience/ticket distribution into revenue?
+    
+10. How efficient are the UFC and WWE turning event activity into revenue?
 
 ---
 
