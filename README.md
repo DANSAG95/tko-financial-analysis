@@ -1,7 +1,5 @@
 # TKO Financial Performance Analysis
 
-## About the project
-
 This project studies TKO Group Holdings financial performance from Q1 2024 to Q1 2026.
 
 The main goal was to understand where TKO's revenue comes from, how its financial performance changed over time, and how UFC and WWE compare on event activity and revenue generation.
