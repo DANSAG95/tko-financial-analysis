@@ -84,6 +84,8 @@ The Power BI report is divided into three pages.
 
 ### Financial Overview
 
+![Financial Overview](images/financial-overview.png)
+
 Looks at TKO's overall financial performance, including:
 
 * Revenue evolution
@@ -93,6 +95,8 @@ Looks at TKO's overall financial performance, including:
 * Revenue vs profitability
 
 ### Segment & Revenue Stream Performance
+
+![Segment Revenue Performance](images/segment-revenue-performance.png)
 
 Focuses on where TKO's revenue comes from.
 
@@ -111,6 +115,8 @@ It also looks at the contribution of:
 * Consumer Products
 
 ### UFC vs WWE — Operational Efficiency
+
+![UFC vs WWE Efficiency](images/ufc-vs-wwe-efficiency.png)
 
 The last page compares UFC and WWE based on:
 
