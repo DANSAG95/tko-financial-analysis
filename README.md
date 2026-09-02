@@ -9,7 +9,7 @@ The main goal was to understand where TKO's revenue comes from, how its financia
 
 ---
 
-## Dataset
+## About the dataset
 
 The project uses three datasets:
 
