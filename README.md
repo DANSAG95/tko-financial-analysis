@@ -8,9 +8,11 @@ The main goal was to understand where TKO's revenue comes from, how its financia
 
 The project uses three datasets:
 
-* `TKOPerformance.csv`
-* `UFCPerformance.csv`
-* `WWEPerformance.csv`
+* TKOPerformance.csv
+* UFCPerformance.csv
+* WWEPerformance.csv
+
+stored in the `Data` folder.
 
 And there are some limitations in the data:
 
@@ -90,12 +92,7 @@ Looks at TKO's overall financial performance, including:
 
 Focuses on where TKO's revenue comes from.
 
-It compares:
-
-* UFC
-* WWE
-* IMG
-* Other
+It compares UFC, WWE, IMG and "Other"
 
 It also looks at the contribution of:
 
@@ -123,7 +120,7 @@ The last page compares UFC and WWE based on:
 
 TKO generated approximately **$9.14B in revenue** during the period covered by the dataset, with **$802.4M in net income**.
 
-Revenue was quite volatile from quarter to quarter. It went from around **$630M in Q1 2024** to more than **$850M in Q2**, dropped during the second half of 2024, then increased significantly in 2025 and reached approximately **$1.60B in Q1 2026**.
+Revenue was quite volatile from quarter to quarter. It went from around $630M in Q1 2024 to more than $850M in Q2, dropped during the second half of 2024, then increased significantly in 2025 and reached approximately 1.60B in Q1 2026.
 
 The worst quarter was **Q1 2024**, when TKO had negative operating income and net income. Net profit margin was approximately **-39.6%**.
 
@@ -135,13 +132,11 @@ The overall net profit margin across the dataset was **8.78%**.
 
 ### Revenue composition
 
-**WWE was the largest contributor over the period, generating around $3.58B in revenue.**
-
-However, the composition changed during the period.
+**WWE** was the largest contributor over the period, generating around **$3.58B in revenue.**
 
 In 2024, most of the reported segment revenue came from UFC and WWE because IMG and Other were not yet reported in the dataset.
 
-From 2025 onwards, IMG became an increasingly important part of the revenue mix. By Q1 2026, IMG represented a much larger share of reported segment revenue than it had at the beginning of the dataset.
+From 2025 onwards, IMG became an increasingly important part of the total revenue. By Q1 2026, it represented a much larger share of the total TKO revenue than it had at the beginning of the dataset.
 
 Among the revenue streams, **Media Rights was consistently the largest contributor**, while Consumer Products represented the smallest share.
 
@@ -177,15 +172,7 @@ Q1 2024 was particularly unusual, with operating expenses exceeding revenue and 
 
 After that quarter, operating expenses remained below revenue but still represented a significant part of TKO's revenue.
 
----
 
-## Main takeaway
-
-The main difference between UFC and WWE is not simply which one generates more revenue.
-
-**UFC generates much more revenue per event, while WWE relies on a much higher event volume to generate its overall revenue.**
-
-At the TKO level, revenue also became more diversified during the period, particularly as IMG became a significant contributor from 2025 onwards.
 
 
 
