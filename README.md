@@ -1,224 +1,199 @@
 # TKO Financial Performance Analysis
 
-## Overview
+## About the project
 
-This project analyzes the financial and operational performance of TKO Group Holdings across its main business segments, with a particular focus on UFC, WWE, IMG, and Other.
+This project looks at TKO Group Holdings' financial performance from **Q1 2024 to Q1 2026**, focusing on revenue, profitability, revenue composition and the performance of UFC and WWE.
 
-The analysis covers quarterly data from **Q1 2024 to Q1 2026** and combines financial performance, revenue composition, profitability, operating expenses, event activity, attendance, and revenue efficiency.
+The analysis was done using **SQL and Power BI**.
 
-The project was developed using **SQL for data analysis and Power BI for interactive reporting and visualization**.
-
----
-
-## Business Objectives
-
-The analysis aims to answer the following business questions:
-
-1. How has TKO's total revenue evolved quarter over quarter and year over year?
-2. Which TKO business segments generate the most revenue, and what percentage of total revenue does each represent?
-3. Which TKO business segments have experienced the strongest revenue growth?
-4. Which reported revenue streams contribute most to TKO's revenue, and how has their contribution changed over time?
-5. Which quarters show the strongest and weakest net profitability, and how does net profit margin evolve?
-6. How significant are operating expenses relative to TKO's revenue?
-7. Which quarters combine strong revenue performance with strong profitability?
-8. Which UFC and WWE segments show the strongest quarter-over-quarter revenue growth and what share of TKO revenue do they represent?
-9. How much revenue do UFC and WWE generate per ticketed event?
-10. How efficiently do UFC and WWE convert event activity and audience/ticket distribution into revenue?
+The main goal was to understand where TKO's revenue comes from, how its financial performance changed over time, and how UFC and WWE compare when looking at event activity and revenue generation.
 
 ---
 
 ## Dataset
 
-The project uses three quarterly datasets:
+The project uses three datasets:
 
-* `TKOPerformance.csv` — consolidated TKO financial performance and segment revenue.
-* `UFCPerformance.csv` — UFC financial, attendance, and event data.
-* `WWEPerformance.csv` — WWE financial, estimated ticket distribution, and event data.
+* `TKOPerformance.csv`
+* `UFCPerformance.csv`
+* `WWEPerformance.csv`
 
-### Time Period
+The data is reported by quarter and covers **Q1 2024 – Q1 2026**.
 
-**Q1 2024 – Q1 2026**
-
-### Granularity
-
-One row per fiscal quarter in each dataset.
-
-### Main Areas
+The datasets contain information about:
 
 * Total revenue
-* Revenue by business segment
-* Revenue streams
+* Revenue by segment
+* Media rights
+* Live events
+* Sponsorship
+* Consumer products
 * Operating expenses
 * Operating income
 * Net income
-* Net profit margin
-* Media rights
-* Live events
-* Sponsorship
-* Consumer products
 * Ticketed events
 * Attendance
-* Estimated ticket distribution
+* Estimated tickets distributed
 
-> **Data limitation:** WWE ticket distribution figures are estimated rather than audited attendance figures. UFC uses announced attendance, so UFC and WWE audience-efficiency metrics should be interpreted as directional comparisons rather than perfectly equivalent measures. IMG and Other revenue are only reported from Q1 2025 onward.
-
----
-
-## Tools & Technologies
-
-* **SQL** — data analysis, aggregations, growth calculations, window functions, ranking and efficiency metrics.
-* **Power BI** — data modeling, DAX measures, interactive dashboards and visualization.
-* **Power Query** — data preparation and transformation.
-* **GitHub** — project documentation and version control.
+There are some limitations in the data. IMG and Other revenue are only available from Q1 2025 onwards. WWE ticket distribution is estimated, while UFC uses announced attendance, so the audience-related comparisons between the two should be treated as directional.
 
 ---
 
-## Data Model
+## Questions
 
-The Power BI model combines the three performance datasets with a dedicated Date table.
+The analysis was built around the following questions:
 
-The model supports analysis across:
-
-* TKO consolidated performance
-* UFC performance
-* WWE performance
-* Quarterly time periods
+1. How has TKO's revenue changed over time?
+2. Which segments contribute the most revenue?
+3. Which segments have grown the most?
+4. Which revenue streams contribute the most to TKO's revenue?
+5. How has profitability changed over time?
+6. How significant are operating expenses compared with revenue?
+7. Which quarters combine high revenue with strong profitability?
+8. How are UFC and WWE performing quarter over quarter?
+9. How much revenue does UFC and WWE generate per event?
+10. How efficiently do UFC and WWE turn event activity and audience/ticket distribution into revenue?
 
 ---
 
-## SQL Analysis
+## SQL
 
-The SQL analysis is organized around the project's ten business questions.
+SQL was used to answer the business questions and calculate the main metrics.
 
-Key techniques used include:
+Some of the techniques used:
 
-* `LAG()` for quarter-over-quarter and year-over-year comparisons
-* Aggregations with `SUM()`
+* `LAG()`
+* `SUM()`
 * Window functions
-* Revenue contribution calculations
-* Profit margin calculations
-* Ranking with `RANK()`
-* Conditional calculations
-* Multi-table joins
-* Revenue-per-event and revenue-per-attendee calculations
+* `RANK()`
+* CTEs
+* Aggregations
+* Revenue growth calculations
+* Profit margins
+* Revenue contribution
+* Revenue per event
+* Revenue per attendee/ticket
 
-SQL queries are available in the `/sql` directory.
+The queries are stored in the `sql` folder.
 
 ---
 
-## Power BI Dashboard
+## Power BI
 
-The Power BI report is divided into three analytical pages.
+The Power BI report is divided into three pages.
 
-### 1. Financial Overview
+### Financial Overview
 
-Focuses on TKO's overall financial performance.
+Looks at TKO's overall financial performance, including:
 
-Key areas:
-
-* Quarterly revenue evolution
-* Net income and net profit margin
+* Revenue evolution
+* Net income
+* Net profit margin
 * Operating expenses
-* Overall financial performance
-* Revenue and profitability comparison
+* Revenue vs profitability
 
-### 2. Segment & Revenue Stream Performance
+### Segment & Revenue Stream Performance
 
-Analyzes how TKO's revenue is distributed across its businesses and revenue streams.
+Focuses on where TKO's revenue comes from.
 
-Key areas:
+It compares:
 
-* UFC, WWE, IMG and Other revenue
-* Segment revenue evolution
-* Revenue mix
-* Media rights
-* Live events
+* UFC
+* WWE
+* IMG
+* Other
+
+It also looks at the contribution of:
+
+* Media Rights
+* Live Events
 * Sponsorship
-* Consumer products
+* Consumer Products
 
-### 3. Operational Efficiency — UFC vs WWE
+### UFC vs WWE — Operational Efficiency
 
-Compares the operational and revenue efficiency of UFC and WWE.
-
-Key areas:
+The last page compares UFC and WWE based on:
 
 * Revenue per event
 * Revenue per attendee/ticket
-* Event activity
+* Number of events
 * Revenue evolution
-* Event volume versus revenue generation
 
 ---
 
-## Key Insights
+## Key findings
 
-### Financial Performance
+### Revenue and profitability
 
-TKO generated approximately **$9.14B in total revenue** during the analyzed period, with **$802.4M in net income** and an overall **8.78% net profit margin**.
+TKO generated approximately **$9.14B in revenue** during the period covered by the dataset, with **$802.4M in net income**.
 
-Revenue followed a highly volatile but generally upward trajectory. Quarterly revenue increased from approximately **$630M in Q1 2024 to $1.60B in Q1 2026**, with significant fluctuations between individual quarters.
+Revenue was quite volatile from quarter to quarter. It went from around **$630M in Q1 2024** to more than **$850M in Q2**, dropped during the second half of 2024, then increased significantly in 2025 and reached approximately **$1.60B in Q1 2026**.
 
-The weakest quarter was **Q1 2024**, when TKO recorded negative operating and net income. Net profit margin reached approximately **-39.6%**.
+The worst quarter was **Q1 2024**, when TKO had negative operating income and net income. Net profit margin was approximately **-39.6%**.
 
-The strongest profitability occurred in **Q2 2025**, with a net profit margin of approximately **20.9%**.
+The strongest quarter for profitability was **Q2 2025**, with a net profit margin of approximately **20.9%**.
 
----
-
-### Revenue Composition
-
-**WWE was the largest segment over the analyzed period, generating approximately $3.58B in revenue.**
-
-However, the revenue mix changed considerably over time.
-
-During 2024, reported revenue was primarily concentrated in WWE and UFC. From 2025 onward, the introduction of reported IMG and Other revenue significantly diversified the business mix.
-
-By **Q1 2026, IMG had become a major contributor**, accounting for approximately 41% of the combined reported segment revenue, compared with approximately 56% for UFC and WWE combined.
-
-Among the reported revenue streams, **Media Rights consistently represented the largest source of revenue**, while Consumer Products remained the smallest contributor.
+The overall net profit margin across the dataset was **8.78%**.
 
 ---
 
-### UFC vs WWE Operational Efficiency
+### Revenue composition
 
-The analysis highlights a significant difference between UFC and WWE business models.
+**WWE was the largest contributor over the period, generating around $3.58B in revenue.**
 
-UFC generated approximately **$60M of revenue per ticketed event**, compared with approximately **$10M for WWE**.
+However, the composition changed during the period.
 
-However, WWE generated substantially more total revenue because it operates at a much higher event volume. For example, in Q1 2024, UFC recorded **5 ticketed events**, while WWE recorded **49**.
+In 2024, most of the reported segment revenue came from UFC and WWE because IMG and Other were not yet reported in the dataset.
 
-This demonstrates that:
+From 2025 onwards, IMG became an increasingly important part of the revenue mix. By Q1 2026, IMG represented a much larger share of reported segment revenue than it had at the beginning of the dataset.
 
-> **UFC generates substantially more revenue per event, while WWE generates higher total revenue through a much larger volume of events.**
-
-Revenue-per-attendee/ticket metrics also showed UFC generating higher revenue relative to its reported audience figures. These comparisons should be interpreted directionally because UFC attendance and WWE ticket distribution are measured differently.
+Among the revenue streams, **Media Rights was consistently the largest contributor**, while Consumer Products represented the smallest share.
 
 ---
 
-### Operating Efficiency
+### UFC vs WWE
 
-Operating expenses totaled approximately **$7.68B**, representing roughly **84% of total revenue** across the analyzed period.
+One of the more interesting differences between UFC and WWE is the amount of revenue generated per event.
 
-The operating expense burden was particularly high in **Q1 2024**, when operating expenses exceeded total revenue and contributed to the quarter's negative operating income.
+On average:
 
-After Q1 2024, operating expenses remained below revenue but continued to represent a substantial proportion of TKO's quarterly revenue.
+* **UFC: ~ $60M revenue per event**
+* **WWE: ~ $10M revenue per event**
 
----
+However, WWE runs many more events.
 
-## Key Takeaways
+For example, in Q1 2024:
 
-* TKO generated **$9.14B in revenue** across the analyzed period.
-* Revenue increased substantially over the period despite significant quarterly volatility.
-* **WWE was the largest cumulative revenue contributor**, generating approximately $3.58B.
-* **Media Rights was consistently the dominant revenue stream.**
-* Revenue became more diversified following the inclusion of IMG and Other from 2025 onward.
-* **Q1 2024 was the weakest financial quarter**, while **Q2 2025 delivered the strongest net profitability**.
-* UFC generated significantly more revenue per event than WWE.
-* WWE generated higher total revenue through a substantially larger number of events.
-* Operating expenses represented approximately **84% of total revenue**, highlighting a significant operating cost burden.
+* UFC: **5 events**
+* WWE: **49 events**
+
+This means that UFC generates considerably more revenue per event, while WWE generates higher total revenue through a much larger event volume.
+
+The revenue-per-attendee/ticket comparison also favored UFC, although the two datasets use different audience measures.
 
 ---
 
-## Project Structure
+### Operating expenses
+
+Operating expenses totaled approximately **$7.68B**, representing around **84% of total revenue** across the period.
+
+Q1 2024 was particularly unusual, with operating expenses exceeding revenue and contributing to the negative operating result.
+
+After that quarter, operating expenses remained below revenue but still represented a significant part of TKO's revenue.
+
+---
+
+## Main takeaway
+
+The main difference between UFC and WWE is not simply which one generates more revenue.
+
+**UFC generates much more revenue per event, while WWE relies on a much higher event volume to generate its overall revenue.**
+
+At the TKO level, revenue also became more diversified during the period, particularly as IMG became a significant contributor from 2025 onwards.
+
+---
+
+## Project structure
 
 ```text
 tko-financial-performance/
@@ -245,13 +220,4 @@ tko-financial-performance/
 │
 └── README.md
 ```
-
----
-
-## Conclusion
-
-This project demonstrates an end-to-end business analysis workflow, from structured financial data and SQL analysis to data modeling and interactive Power BI reporting.
-
-The analysis combines **financial performance, revenue composition, profitability and operational efficiency** to provide a broader view of how TKO's different business segments contribute to overall performance.
-
-The project also highlights an important analytical distinction between **scale and efficiency**: WWE generates greater total revenue through significantly higher event volume, while UFC generates substantially more revenue per individual event.
+event volume, while UFC generates substantially more revenue per individual event.
