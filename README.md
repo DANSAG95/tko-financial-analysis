@@ -20,7 +20,7 @@ The information about IMG and the segments represented under "Other" like profes
 
 WWE ticket distribution is estimated, while UFC uses announced attendance, so the audience-related comparisons between the two should be treated as directional.
 
----
+
 
 ## Questions
 
@@ -46,7 +46,7 @@ The analysis was built around the following questions:
     
 10. How efficient are the UFC and WWE turning event activity into revenue?
 
----
+
 
 ## SQL
 
@@ -68,7 +68,7 @@ Some of the techniques used:
 
 The queries are stored in the `sql` folder.
 
----
+
 
 ## Power BI
 
@@ -112,7 +112,7 @@ The last page compares UFC and WWE based on:
 * Number of events
 * Revenue evolution
 
----
+
 
 ## Key findings
 
@@ -128,7 +128,7 @@ The strongest quarter for profitability was **Q2 2025**, with a net profit margi
 
 The overall net profit margin across the dataset was **8.78%**.
 
----
+
 
 ### Revenue composition
 
@@ -140,7 +140,7 @@ From 2025 onwards, IMG became an increasingly important part of the total revenu
 
 Among the revenue streams, **Media Rights was consistently the largest contributor**, while Consumer Products represented the smallest share.
 
----
+
 
 ### UFC vs WWE
 
@@ -162,7 +162,7 @@ This means that UFC generates considerably more revenue per event, while WWE gen
 
 The revenue-per-attendee/ticket comparison also favored UFC, although the two datasets use different audience measures.
 
----
+
 
 ### Operating expenses
 
