@@ -10,7 +10,7 @@ The project uses three datasets:
 * UFCPerformance.csv
 * WWEPerformance.csv
 
-stored in the [`Data/`](./SQL/Data) folder.
+stored in the [`Data/`](./Data) folder.
 
 And there are some limitations in the data:
 
