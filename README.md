@@ -2,11 +2,10 @@
 
 ## About the project
 
-This project looks at TKO Group Holdings' financial performance from **Q1 2024 to Q1 2026**, focusing on revenue, profitability, revenue composition and the performance of UFC and WWE.
+This project studies TKO Group Holdings financial performance from Q1 2024 to Q1 2026.
 
-The analysis was done using **SQL and Power BI**.
+The main goal was to understand where TKO's revenue comes from, how its financial performance changed over time, and how UFC and WWE compare on event activity and revenue generation.
 
-The main goal was to understand where TKO's revenue comes from, how its financial performance changed over time, and how UFC and WWE compare when looking at event activity and revenue generation.
 
 ---
 
